@@ -1,0 +1,10 @@
+#Program to show all arithmatic operations
+a= int(input("Enter one number: "))
+b=int(input("Enter another number: "))
+print(a, "+", b, "=",a+b)
+print(a, "-", b, "=",a-b)
+print(a, "x", b, "=",a*b)
+print(a, "/", b, "=",a/b)
+print(a, "%", b, "=",a%b)
+print(a, "//", b, "=",a//b)
+print("The largest number among the two is:", max(a,b))

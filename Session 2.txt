@@ -1,0 +1,10 @@
+1. String operations: Concatination of two or more strings
+	Programs done: Printing out the result of concatinating two strings
+2. Input statement: To input any value and assign it to a variable.
+	Programs done: Performing arithmatic operations upon taking input from the user
+3. Flow of control: Learning if statement, if else and if else ladder.
+	Programs done: Finding if a number is positive or negative, finding the grade of a student 				by taking the marks as input
+4. Snake and ladder program initialisation: To learn random number generation using the random class.
+	Programs done: To generate random number between 0 and 100
+
+

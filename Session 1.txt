@@ -1,0 +1,5 @@
+1. Print statement: How to print a string or variable into the python prompt.
+	Programs done: Printing your name 
+2. Arithmatic operations: How to add/subtract/Multiply/divide two or more numbers.
+	Programs done:Adding two numbers and printing the output, performing all operations and 		      printing the output.
+
