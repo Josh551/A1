@@ -1,13 +1,16 @@
 import random
-#Assigning position of the snakes and ladders
+
+#Assigning position of the snakes and ladders as a dictionary
+
 snakepos={11:2,25:4,38:9,65:46,89:70,93:64}
 ladderpos={8:37,13:34,40:68,52:81,76:97}
+
 def generate_random():
     '''
     A function to return a random number between 1 and 12 to roll the dice
     Return type: Integer
     '''
-    return random.randrange(1,13)
+    return random.randrange(1,7)
 
 def get_player_dict(n):
     '''
@@ -25,13 +28,13 @@ def get_player_dict(n):
     
 print("Welcome to the game of Snake and Ladder.")
 num=int(input("Enter the number of players: "))
-player_list=get_player_dict(num) #Gets the player list
+player_list=get_player_dict(num)      #Gets the player list
 flag=True
 while(flag==True):
     print("*****************************************************************************")
     print("Beginning of round.")
     print()
-    for i in player_list.keys():    #iterating over the list of players
+    for i in player_list.keys():      #iterating over the list of players
         print(i+'\'s'+" turn.")
         input("Press <Enter> to continue.")
         print()
@@ -45,10 +48,13 @@ while(flag==True):
         elif(player_list[i] in ladderpos):
             print("Yippie! You landed on the ladder! You are upgraded.")
             player_list[i]=ladderpos[player_list[i]]
-        elif(player_list[i]>=100):
+        elif(player_list[i]==100):
             print(i,"won the game! Congratulations!")
             flag=False
             break                    #exits out of the for loop
+        elif(player_list[i]>100):    #makes sure the loop is exited only if score is equal to 100
+            print("Oops, your score is too high. Please try again next round.")
+            player_list[i]-=dice
         print("Score of",i,"is:",player_list[i])            
         print()         
     if(player_list[i]<100):    
