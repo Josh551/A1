@@ -10,6 +10,7 @@ try:
     server = smtplib.SMTP('smtp.gmail.com',587)
     server.starttls()
     server.login(username[0],str(p))
+    print("Login Successful!")
     msg=input("Enter your message: ")
     server.sendmail(str(sender),str(reciever),msg)
     server.close()
