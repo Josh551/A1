@@ -62,6 +62,3 @@ while(flag==True):
         for k in player_list.keys():
             print(k+":",player_list[k])
     print("*****************************************************************************")
-        
-
-
